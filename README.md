@@ -80,6 +80,11 @@ Watch for test changes and livereload the browser
   new directory. Component names should contain at least 1 `-` and be
   lower cased.
 
+  Example: `my-component`
+
+  - To preview a web component you can load up storybook with:
+    `yarn storybook` or with `yarn wds` and then navigate to your
+    component in the browser.
 
 ## Svg Icons provided by Heroicons
 
@@ -87,4 +92,4 @@ Watch for test changes and livereload the browser
 
 ## Additions?
 
-[ ] - CableReady / Stimulus Reflex ?!
+- [ ] - CableReady / Stimulus Reflex ?!
