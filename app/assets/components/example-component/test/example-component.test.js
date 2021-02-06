@@ -28,6 +28,6 @@ describe('ExampleComponent', () => {
   it('passes the a11y audit', async () => {
     const el = await fixture(html`<example-component></example-component>`);
 
-    await expect(el).shadowDom.to.be.accessible();
+    expect(el).shadowDom.to.be.accessible();
   });
 });

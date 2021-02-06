@@ -42,7 +42,7 @@
       "eslint-config-prettier"
     ],
     "parserOptions": {
-      "ecmaVersion": 7
+      "ecmaVersion": 8
     }
   },
   "prettier": {

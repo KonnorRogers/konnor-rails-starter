@@ -17,6 +17,7 @@
 - Testing with web-test-runner for web components
 - Linting / Formatting / Code analyzing (Reek / Brakeman)
 - Linting / Testing provided by GH-actions
+- ESBuild instead of babel for js compilation
 
 ## Installation
 
