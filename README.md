@@ -15,7 +15,7 @@
 - Web Components via lit-element
 - Storybook for web components
 - Testing with web-test-runner for web components
-- Linting / Formatting / Code analyzing (Reek / Brakeman)
+- Linting / Formatting / Code analyzing
 - Linting / Testing provided by GH-actions
 - ESBuild instead of babel for js compilation
 
@@ -55,9 +55,9 @@ Formats with Rubocop + Eslint + Prettier on {app,test}
 
 Will run all tests. Minitest + Capybara + Web Component tests
 
-### `bin/reek`
+### `bin/guard`
 
-Check for code smells
+File watching / live reloading / test watching
 
 ### `bin/brakeman`
 

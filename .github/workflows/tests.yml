@@ -86,6 +86,5 @@ jobs:
     - name: lint
       run: |
         ./bin/lint
-        ./bin/reek
         ./bin/brakeman
 
