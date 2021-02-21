@@ -1,8 +1,15 @@
-# Architecture of the app
+# Architecture of this repo
 
 ## Database
 
 Postgres
+
+## Generators
+
+[config/initializers/generators.rb](config/initializers/generators.rb)
+
+- Stylesheets disabled on new controller generation.
+- Default to primary keys instead of auto-incrementing ids.
 
 ## Assets
 

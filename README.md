@@ -37,7 +37,7 @@ bundle exec rails server
 docker-compose up # Redis / Postgres run here
 ```
 
-The above is also available in the [Procfile] in this repo.
+The above is also available in the [Procfile](Procfile) in this repo.
 
 ## Bin commands
 
@@ -77,7 +77,7 @@ rails db:migrate && rails db:create && rails db:seed
 
 ### WEB COMPONENTS!
 
-- Located in `app/assets/components`
+- Located in [app/assets/components](app/assets/components)
 
 To add a new component, simply copy the example component to a
 new directory. Component names should contain at least 1 `-` and be
@@ -89,8 +89,8 @@ lower cased.
 
 ## Architecture
 
-To check out how this is structued, check out the [Architecture.md]
-file.
+To check out how this is structued, check out the
+[Architecture.md](Architecture.md) file.
 
 ## Additions?
 
