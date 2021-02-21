@@ -4,9 +4,8 @@
 const hmr = process.argv.includes('--hmr');
 
 export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
-  rootDir: "./app/assets/components",
+  // rootDir: ".",
   nodeResolve: true,
-  open: '/',
   watch: !hmr,
 
   /** Compile JS for older browsers. Requires @web/dev-server-esbuild plugin */

@@ -2,4 +2,5 @@
 
 # application wide helpers
 module ApplicationHelper
+  include Imageable
 end

@@ -1,0 +1,11 @@
+.img {
+  width: 100%;
+}
+
+.img--background__cover {
+  background-size: cover;
+}
+.img--background__centered {
+  background-position-x: center;
+  background-position-y: center;
+}

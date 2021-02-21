@@ -16,8 +16,6 @@
 - Storybook for web components
 - Testing with web-test-runner for web components
 - Linting / Formatting / Code analyzing
-- Linting / Testing provided by GH-actions
-- ESBuild instead of babel for js compilation
 
 ## Installation
 
@@ -39,7 +37,7 @@ bundle exec rails server
 docker-compose up # Redis / Postgres run here
 ```
 
-Feel free to put the above in an Overmind or Procfile.
+The above is also available in the [Procfile] in this repo.
 
 ## Bin commands
 
@@ -57,7 +55,7 @@ Will run all tests. Minitest + Capybara + Web Component tests
 
 ### `bin/guard`
 
-File watching / live reloading / test watching
+File watching / Test watching / live reloading
 
 ### `bin/brakeman`
 
@@ -69,27 +67,31 @@ Watch for test changes and livereload the browser
 
 ### `bin/db-setup`
 
-`rails db:migrate && rails db:create && rails db:seed`
+Is the equivalent of:
+
+```bash
+rails db:migrate && rails db:create && rails db:seed
+```
 
 ## Cool features
 
 ### WEB COMPONENTS!
-  - Located in `app/assets/components`
 
-  To add a new component, simply copy the example component to a
-  new directory. Component names should contain at least 1 `-` and be
-  lower cased.
+- Located in `app/assets/components`
 
-  Example: `my-component`
-
-  - To preview a web component you can load up storybook with:
-    `yarn storybook` or with `yarn wds` and then navigate to your
-    component in the browser.
+To add a new component, simply copy the example component to a
+new directory. Component names should contain at least 1 `-` and be
+lower cased.
 
 ## Svg Icons provided by Heroicons
 
 - https://heroicons.com/
 
+## Architecture
+
+To check out how this is structued, check out the [Architecture.md]
+file.
+
 ## Additions?
 
-- [ ] - CableReady / Stimulus Reflex ?!
+[ ] - CableReady / Stimulus Reflex ?!
