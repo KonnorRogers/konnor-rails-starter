@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
 
-gem 'rails', '~> 6.1.1' # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 6.1.3' # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 gem 'bootsnap', '>= 1.4.4', require: false # Reduces boot times through caching; required in config/boot.rb
 gem 'geocoder', '~> 1.3', '>= 1.3.7' # Geocoding for places
@@ -14,15 +14,17 @@ gem 'pg', '~> 1.1' # Use postgresql as the database for Active Record
 gem 'puma', '~> 5.0' # Use Puma as the app server
 gem 'redis', '~> 4.0' # Use Redis adapter to run Action Cable in production
 gem 'turbo-rails', '~> 0.5' # Turbolinks / Turboframes / etc
-gem 'webpacker', '~> 5' # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'vite_rails' # Transpile app-like JavaScript
 # gem 'bcrypt', '~> 3.1.7' # gem 'bcrypt', '~> 3.1.7'
+
 gem 'image_processing', '~> 1.2' # Use Active Storage variant
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw] # Call 'byebug' anywhere to stop execution and get a debugger console
-  gem 'guard', '~> 2.14', require: false # File watching
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false # live reloading
-  gem 'guard-minitest', '~> 2.4.6', require: false # Reload tests
+  # Call 'byebug' anywhere to stop execution and get a debugger console
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  # Database items
+  gem 'faker', '~> 2.16', '>= 2.16'
 end
 
 group :development do

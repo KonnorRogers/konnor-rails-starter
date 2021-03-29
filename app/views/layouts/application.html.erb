@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nursing Home Review</title>
+    <title>Remember Car</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <!-- Check Webpacker docs for changes to this -->
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= vite_client_tag %>
+    <%= vite_stylesheet_tag 'assets/application' if Rails.env.production? %>
+    <%= vite_typescript_tag 'application' %>
   </head>
 
   <body>
-    <%= yield %>
+    <main class="mx-auto">
+      <%= yield %>
+    </main>
   </body>
 </html>

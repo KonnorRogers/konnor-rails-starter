@@ -9,15 +9,15 @@ default: &default
 
 development:
   <<: *default
-  database: carebnb_development
+  database: remember_car_development
 
 test:
   <<: *default
-  database: carebnb_test
+  database: remember_car_test
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: carebnb_production
+  database: remember_car_production
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 15 } %>
   url: <%= ENV["DATABASE_CONNECTION_POOL_URL"] || ENV["DATABASE_URL"] %>

@@ -1,0 +1,33 @@
+<article class="flex flex-col align-end h-full w-11/12 mx-auto">
+  <div class="relative pb-1/2">
+    <img class="absolute bottom-0 h-full w-full object-cover rounded-2xl shadow-lg"
+        alt="facility image"
+        src="https://via.placeholder.com/650x450">
+  </div>
+
+  <card class="relative flex flex-col justify-center align-center mx-auto
+               py-4 px-2 w-11/12 -mt-4 sm:-mt-14 bg-white rounded-lg shadow-xl text-center">
+    <p class="text-gray-700 text-xl">
+      <%= facility.name.titleize %>
+    </p>
+
+    <p class="text-gray-600">
+      <%= facility.street.titleize %>
+    </p>
+
+    <p class="text-gray-600">
+      <%= facility.city.titleize %>,
+      <%= facility.state.upcase %>
+    </p>
+
+    <p class="text-gray-500">
+      <%= t("rating") %>: <%= facility.medicare_overall_rating %> / 5
+      &bull;
+      <%= pluralize(facility.reviews.size, t("review")) %>
+      &bull;
+      <%= pluralize(1, t("mile")) %>
+    </p>
+
+  </card>
+</article>
+

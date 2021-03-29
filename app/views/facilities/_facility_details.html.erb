@@ -1,0 +1,104 @@
+<section>
+  <img src="https://via.placeholder.com/650x450">
+
+  <p>
+    <%= facility.name.titleize %>
+  </p>
+
+  <p>
+    <%= t("rating") %>: <%= facility.medicare_overall_rating %> / 5
+  </p>
+
+  <p>
+    <%= facility.street.titleize %>,
+  </p>
+  <p>
+    <%= facility.city.titleize %>
+    <%= facility.state.upcase %>
+  </p>
+
+  <p>
+    <%= t("zipcode") %>: <%= facility.zipcode %>
+  </p>
+
+  <p>
+    <p>
+      <%= t("facility.federal_provider_number") %>: <%= facility.federal_provider_number %>
+    </p>
+    <p>
+      <%= t("facility.legal_business_name") %>: <%= facility.legal_business_name %>
+    </p>
+    <p>
+      <%= t("facility.ownership_type") %>: <%= facility.ownership_type %>
+    </p>
+    <p>
+      <%= t("phone_number") %>: <%= facility.phone_number %>
+    </p>
+  </p>
+
+  <flex-col>
+    <p>
+      <%= t("facility.date_first_approved_for_medicare") %> :
+      <%= facility.date_first_approved_for_medicare_services %>
+    </p>
+
+    <p>
+      <%= t("facility.medicare_overall_rating") %>:
+      <%= facility.medicare_overall_rating %>
+    </p>
+
+    <p>
+      <%= t("facility.medicare_health_inspection_rating") %>:
+      <%= facility.medicare_health_inspection_rating %>
+  </p>
+
+    <p>
+      <%= t("facility.medicare_staffing_rating") %>: <%= facility.medicare_staffing_rating %>
+    </p>
+  </flex-col>
+
+  <p>
+    <%= t("facility.number_of_infection_control_citations") %>: <%= facility.number_of_infection_control_citations %>
+  </p>
+  <p>
+    <%= t("facility.abuse") %> <%= facility.abuse_icon %>
+    <p>
+      * <%= t("facility.abuse_icon_info") %> *
+    </p>
+    </br>
+  </p>
+  <p>
+    <%= t("facility.recent_ownership_change") %>: (<%= facility.recent_ownership_change %>)
+
+    <p>
+      * <%= t("facility.recent_ownership_change_info") %> *
+    </p>
+  </p>
+  <p>
+    <%= t("facility.recent_health_inspection") %>: (<%= facility.recent_health_inspection %>)
+
+    <p>
+      * <%= t("facility.recent_health_inspection_info") %> *
+    </p>
+  </p>
+  <p>
+    <%= t("facility.number_of_beds") %>: <%= facility.number_of_certified_beds %>
+  </p>
+  <p>
+    <%= t("facility.average_number_of_residents_per_days") %>: <%= facility.average_number_of_residents_per_day %>
+  </p>
+  <p>
+    <%= t("facility.continuing_care_retirement_community") %>: (<%= facility.continuing_care_retirement_community %>)
+  </p>
+
+  <p>
+    <%= t("facility.number_of_incidents") %>: <%= facility.number_of_incidents %>
+  </p>
+
+  <p>
+    <%= t("facility.number_of_fines") %>: <%= facility.number_of_fines %>
+  </p>
+  <p>
+    <%= t("facility.amount_paid_in_fines") %>: $<%= facility.amount_paid_in_fines %>
+  </p>
+</section>

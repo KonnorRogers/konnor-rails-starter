@@ -30,4 +30,48 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  city: "City"
+  country: "Country"
+  reviews: "Reviews"
+  review: "Review"
+  miles: "Miles"
+  mile: "Mile"
+  name: "Name"
+  phone_number: "Phone number"
+  state: "State"
+  zipcode: "Zipcode"
+  rating: "Rating"
+
+  facility:
+    abuse: "Abuse?"
+    abuse_icon_info: "Abuse, Neglect, Mistreatment, or Exploitation at this facility in the
+last 2 years"
+
+    amount_paid_in_fines: "Amount paid in fines"
+    average_number_of_residents_per_day: "Average number of residents per day"
+
+    continuing_care_retirement_community: "Continuing care retirement community?"
+
+    data_first_approved_for_medicare: "Date first approved for Medicare services"
+
+    federal_provider_number: "Federal provider number"
+
+    legal_business_name: "Legal business name"
+
+    medicare_overall_rating: "Overall Medicare rating"
+    medicare_health_inspection_rating: "Medicare health inspection rating"
+    medicare_staffing_rating: "Medicare staffing rating"
+
+    number_infection_control_citations: "number of Infection Control citations"
+    number_of_beds: "Number of beds"
+    number_of_fines: "Number of fines"
+    number_of_incidents: "Number of incidents"
+
+    ownership_type: "Ownership type"
+
+    recent_ownership_change: "Recent ownership change?"
+    recent_ownership_change_info: "Recent ownership change is defined by a change in ownership in the last 12 months"
+
+    recent_health_inspection: "Recent health inspection?"
+    recent_health_inspection_info: "A recent health inspection is defined as an inspection in the last 2 years."
+

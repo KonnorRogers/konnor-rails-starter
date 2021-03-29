@@ -17,9 +17,9 @@ jobs:
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
-          --health-interval 10ms 
-          --health-timeout 500ms 
-          --health-retries 35
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
         ports:
           - "5432:5432"
 
@@ -54,7 +54,8 @@ jobs:
         POSTGRES_PASSWORD: "password"
         POSTGRES_PORT: "5432"
       run: |
-        ./bin/db-setup
+        bundle exec rails db:create
+        bundle exec rails db:migrate
         ./bin/tests
 
   lint:

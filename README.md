@@ -11,10 +11,6 @@
 - Docker for database / Redis
 - Stimulus
 - Turbo (more so for just turbolinks)
-- Regular ole CSS with a number of css variables
-- Web Components via lit-element
-- Storybook for web components
-- Testing with web-test-runner for web components
 - Linting / Formatting / Code analyzing
 
 ## Installation
@@ -26,14 +22,15 @@ yarn install && bundle install
 ## DB Setup
 
 ```bash
-bin/db-setup
+bundle exec rails db:create
+bundle exec rails db:migrate
 ```
 
 ## Running the server
 
 ```bash
 bundle exec rails server
-./bin/webpack-dev-server
+./bin/vite dev
 docker-compose up # Redis / Postgres run here
 ```
 
@@ -53,10 +50,6 @@ Formats with Rubocop + Eslint + Prettier on {app,test}
 
 Will run all tests. Minitest + Capybara + Web Component tests
 
-### `bin/guard`
-
-File watching / Test watching / live reloading
-
 ### `bin/brakeman`
 
 Check for security issues
@@ -65,31 +58,13 @@ Check for security issues
 
 Watch for test changes and livereload the browser
 
-### `bin/db-setup`
-
-Is the equivalent of:
-
-```bash
-rails db:migrate && rails db:create && rails db:seed
-```
-
-## Cool features
-
-### WEB COMPONENTS!
-
-- Located in [app/assets/components](app/assets/components)
-
-To add a new component, simply copy the example component to a
-new directory. Component names should contain at least 1 `-` and be
-lower cased.
-
 ## Svg Icons provided by Heroicons
 
 - https://heroicons.com/
 
 ## Architecture
 
-To check out how this is structued, check out the
+To check out how this is structured, check out the
 [Architecture.md](Architecture.md) file.
 
 ## Additions?
